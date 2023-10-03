@@ -1,0 +1,22 @@
+15:26:30 **** Incremental Build of configuration Debug for project stm32_lab1 ****
+make -j12 all 
+arm-none-eabi-gcc -o "stm32_lab1.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\NITRO 5\OneDrive\Documents\HK231\vxl_lab1\lab1\source_code\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32_lab1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32_lab1.elf
+ 
+arm-none-eabi-size   stm32_lab1.elf 
+arm-none-eabi-objdump -h -S  stm32_lab1.elf  > "stm32_lab1.list"
+arm-none-eabi-objcopy  -O ihex  stm32_lab1.elf  "stm32_lab1.hex"
+   text	   data	    bss	    dec	    hex	filename
+   4656	     20	   1572	   6248	   1868	stm32_lab1.elf
+arm-none-eabi-objcopy  -O binary  stm32_lab1.elf  "stm32_lab1.bin"
+Finished building: default.size.stdout
+ 
+Finished building: stm32_lab1.hex
+Finished building: stm32_lab1.bin
+Finished building: stm32_lab1.list
+ 
+ 
+ 
+
+15:26:31 Build Finished. 0 errors, 0 warnings. (took 535ms)
+
