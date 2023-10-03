@@ -72,31 +72,31 @@ enum modeLed {
 
 void turnOnLight(enum modeLed led){
 	switch (led){
-		case LED_RED1: {
+		case RED1: {
 			HAL_GPIO_WritePin(LED_RED1_GPIO_Port, LED_RED1_Pin, GPIO_PIN_RESET);
 			HAL_GPIO_WritePin(LED_YELLOW1_GPIO_Port, LED_YELLOW1_Pin, GPIO_PIN_SET);
 			HAL_GPIO_WritePin(LED_GREEN1_GPIO_Port, LED_GREEN1_Pin, GPIO_PIN_SET);
 			break;
 		}
-		case LED_YELLOW1: {
+		case YELLOW1: {
 			HAL_GPIO_WritePin(LED_YELLOW1_GPIO_Port, LED_YELLOW1_Pin, GPIO_PIN_RESET);
 			HAL_GPIO_WritePin(LED_RED1_GPIO_Port, LED_RED1_Pin, GPIO_PIN_RESET);
 			HAL_GPIO_WritePin(LED_GREEN1_GPIO_Port, LED_GREEN1_Pin, GPIO_PIN_RESET);
 			break;
 		}
-		case LED_GREEN1: {
+		case GREEN1: {
 			HAL_GPIO_WritePin(LED_GREEN1_GPIO_Port, LED_GREEN1_Pin, GPIO_PIN_RESET);
 			HAL_GPIO_WritePin(LED_YELLOW1_GPIO_Port, LED_YELLOW1_Pin, GPIO_PIN_SET);
 			HAL_GPIO_WritePin(LED_RED1_GPIO_Port, LED_RED1_Pin, GPIO_PIN_SET);
 			break;
 		}
-		case LED_RED2: {
+		case RED2: {
 			HAL_GPIO_WritePin(LED_RED2_GPIO_Port, LED_RED2_Pin, GPIO_PIN_RESET);
 			HAL_GPIO_WritePin(LED_YELLOW2_GPIO_Port, LED_YELLOW2_Pin, GPIO_PIN_SET);
 			HAL_GPIO_WritePin(LED_GREEN2_GPIO_Port, LED_GREEN2_Pin, GPIO_PIN_SET);
 			break;
 		}
-		case LED_YELLOW2: {
+		case YELLOW2: {
 			HAL_GPIO_WritePin(LED_YELLOW2_GPIO_Port, LED_YELLOW2_Pin, GPIO_PIN_RESET);
 			HAL_GPIO_WritePin(LED_RED2_GPIO_Port, LED_RED2_Pin, GPIO_PIN_SET);
 			HAL_GPIO_WritePin(LED_GREEN2_GPIO_Port, LED_GREEN2_Pin, GPIO_PIN_SET);
@@ -243,8 +243,8 @@ int main(void)
 
 	      	  switch(currentState){
 	      	  case RED2_GREEN1: {
-	      		  turnOnLight(LED_RED2);
-	      		  turnOnLight(LED_GREEN1);
+	      		  turnOnLight(RED2);
+	      		  turnOnLight(GREEN1);
 	      		  count--;
 	      		  if (count <= 0){
 	      			  count = 2;
@@ -253,8 +253,8 @@ int main(void)
 	      		  break;
 	      	  }
 	      	  case RED2_YELLOW1: {
-	      		  turnOnLight(LED_RED2);
-	      		  turnOnLight(LED_YELLOW1);
+	      		  turnOnLight(RED2);
+	      		  turnOnLight(YELLOW1);
 	      		  count--;
 	      		  if (count <= 0){
 	      		  	  count = 3;
@@ -263,8 +263,8 @@ int main(void)
 	      		  break;
 	      	  }
 	      	  case RED1_GREEN2: {
-	      		  turnOnLight(LED_RED1);
-	      		  turnOnLight(LED_GREEN2);
+	      		  turnOnLight(RED1);
+	      		  turnOnLight(GREEN2);
 	      		  count--;
 	      		  if (count <= 0){
 	      		  	  count = 2;
@@ -273,8 +273,8 @@ int main(void)
 	      		  break;
 	      	  }
 	      	  default : {
-	      		  turnOnLight(LED_RED1);
-	      		  turnOnLight(LED_YELLOW2);
+	      		  turnOnLight(RED1);
+	      		  turnOnLight(YELLOW2);
 	      		  count--;
 	      		  if (count <= 0){
 	      			  count = 3;

@@ -61,55 +61,6 @@ static void MX_GPIO_Init(void);
   * @brief  The application entry point.
   * @retval int
   */
-enum stateOfLight {
-	RED2_GREEN1, RED2_YELLOW1, RED1_GREEN2, RED1_YELLOW2
-} currentState = RED2_GREEN1;
-
-enum modeLed {
-	LED_RED1, LED_YELLOW1, LED_GREEN1, LED_RED2, LED_YELLOW2, LED_GREEN2
-} ;
-
-
-void turnOnLight(enum modeLed led){
-	switch (led){
-		case LED_RED1: {
-			HAL_GPIO_WritePin(LED_RED1_GPIO_Port, LED_RED1_Pin, GPIO_PIN_RESET);
-			HAL_GPIO_WritePin(LED_YELLOW1_GPIO_Port, LED_YELLOW1_Pin, GPIO_PIN_SET);
-			HAL_GPIO_WritePin(LED_GREEN1_GPIO_Port, LED_GREEN1_Pin, GPIO_PIN_SET);
-			break;
-		}
-		case LED_YELLOW1: {
-			HAL_GPIO_WritePin(LED_YELLOW1_GPIO_Port, LED_YELLOW1_Pin, GPIO_PIN_RESET);
-			HAL_GPIO_WritePin(LED_RED1_GPIO_Port, LED_RED1_Pin, GPIO_PIN_RESET);
-			HAL_GPIO_WritePin(LED_GREEN1_GPIO_Port, LED_GREEN1_Pin, GPIO_PIN_RESET);
-			break;
-		}
-		case LED_GREEN1: {
-			HAL_GPIO_WritePin(LED_GREEN1_GPIO_Port, LED_GREEN1_Pin, GPIO_PIN_RESET);
-			HAL_GPIO_WritePin(LED_YELLOW1_GPIO_Port, LED_YELLOW1_Pin, GPIO_PIN_SET);
-			HAL_GPIO_WritePin(LED_RED1_GPIO_Port, LED_RED1_Pin, GPIO_PIN_SET);
-			break;
-		}
-		case LED_RED2: {
-			HAL_GPIO_WritePin(LED_RED2_GPIO_Port, LED_RED2_Pin, GPIO_PIN_RESET);
-			HAL_GPIO_WritePin(LED_YELLOW2_GPIO_Port, LED_YELLOW2_Pin, GPIO_PIN_SET);
-			HAL_GPIO_WritePin(LED_GREEN2_GPIO_Port, LED_GREEN2_Pin, GPIO_PIN_SET);
-			break;
-		}
-		case LED_YELLOW2: {
-			HAL_GPIO_WritePin(LED_YELLOW2_GPIO_Port, LED_YELLOW2_Pin, GPIO_PIN_RESET);
-			HAL_GPIO_WritePin(LED_RED2_GPIO_Port, LED_RED2_Pin, GPIO_PIN_SET);
-			HAL_GPIO_WritePin(LED_GREEN2_GPIO_Port, LED_GREEN2_Pin, GPIO_PIN_SET);
-			break;
-		}
-
-		default : {
-			HAL_GPIO_WritePin(LED_GREEN2_GPIO_Port, LED_GREEN2_Pin, GPIO_PIN_RESET);
-			HAL_GPIO_WritePin(LED_YELLOW2_GPIO_Port, LED_YELLOW2_Pin, GPIO_PIN_SET);
-			HAL_GPIO_WritePin(LED_RED2_GPIO_Port, LED_RED2_Pin, GPIO_PIN_SET);
-		}
-	}
-}
 void display7SEG(int num){
 	if(num==0){
 		HAL_GPIO_WritePin(a_GPIO_Port, a_Pin, RESET);
@@ -232,59 +183,13 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  int count = 3;
-  int num = 5;
+  int counter=9;
   while (1)
   {
     /* USER CODE END WHILE */
-	  if (num <= 0){ num = 5 ;
-	        	display7SEG( num-- );
-	  }
-
-	      	  switch(currentState){
-	      	  case RED2_GREEN1: {
-	      		  turnOnLight(LED_RED2);
-	      		  turnOnLight(LED_GREEN1);
-	      		  count--;
-	      		  if (count <= 0){
-	      			  count = 2;
-	      			  currentState = RED2_YELLOW1;
-	      		  }
-	      		  break;
-	      	  }
-	      	  case RED2_YELLOW1: {
-	      		  turnOnLight(LED_RED2);
-	      		  turnOnLight(LED_YELLOW1);
-	      		  count--;
-	      		  if (count <= 0){
-	      		  	  count = 3;
-	      		  	  currentState = RED1_GREEN2;
-	      		  }
-	      		  break;
-	      	  }
-	      	  case RED1_GREEN2: {
-	      		  turnOnLight(LED_RED1);
-	      		  turnOnLight(LED_GREEN2);
-	      		  count--;
-	      		  if (count <= 0){
-	      		  	  count = 2;
-	      		  	  currentState = RED1_YELLOW2;
-	      		  }
-	      		  break;
-	      	  }
-	      	  default : {
-	      		  turnOnLight(LED_RED1);
-	      		  turnOnLight(LED_YELLOW2);
-	      		  count--;
-	      		  if (count <= 0){
-	      			  count = 3;
-	      			  currentState = RED2_GREEN1;
-	      		  }
-	      	  }
-
-	      	  }
-
-	      	  HAL_Delay(1000);
+	  if( counter < 0) counter = 9;
+	  display7SEG ( counter --) ;
+	  HAL_Delay (1000) ;
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
