@@ -750,3 +750,71 @@
 2023-10-03 15:33:08,857 [INFO] ProjectBuilder:3789 - Time for Generating toolchain IDE Files: 2214mS.
 2023-10-03 15:33:08,857 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 0mS.
 2023-10-03 15:33:08,857 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 0mS.
+2023-10-03 16:07:00,764 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 934559928 Bytes (1073741824)
+2023-10-03 16:07:02,084 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 957106360 Bytes (1073741824)
+2023-10-03 16:09:47,016 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 866210816 Bytes (1073741824)
+2023-10-03 16:09:50,625 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 888480504 Bytes (1073741824)
+2023-10-03 16:09:54,488 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 782753392 Bytes (1073741824)
+2023-10-03 16:09:54,786 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2023-10-03 16:09:54,786 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2023-10-03 16:09:54,786 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2023-10-03 16:09:54,786 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2023-10-03 16:09:54,802 [INFO] CodeGenerator:663 - code generatio: config db path: C:\Users\NITRO 5\OneDrive\Documents\HK231\STM32CubeIDE_1.7.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.3.0.202107141111\\db\
+2023-10-03 16:09:55,038 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\NITRO 5\OneDrive\Documents\HK231\vxl_lab1\lab1\source_code\MXTmpFiles\license.tmp_save
+2023-10-03 16:09:55,147 [INFO] CodeEngine:257 - Generated code: C:\Users\NITRO 5\OneDrive\Documents\HK231\vxl_lab1\lab1\source_code\MXTmpFiles\license.tmp
+2023-10-03 16:09:55,179 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\NITRO 5\OneDrive\Documents\HK231\vxl_lab1\lab1\source_code\MXTmpFiles\gpio.tmp_save
+2023-10-03 16:09:55,241 [INFO] CodeEngine:257 - Generated code: C:\Users\NITRO 5\OneDrive\Documents\HK231\vxl_lab1\lab1\source_code\MXTmpFiles\gpio.tmp
+2023-10-03 16:09:55,320 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\NITRO 5\OneDrive\Documents\HK231\vxl_lab1\lab1\source_code\Core\Src\stm32f1xx_it.c_save
+2023-10-03 16:09:55,445 [INFO] CodeEngine:257 - Generated code: C:\Users\NITRO 5\OneDrive\Documents\HK231\vxl_lab1\lab1\source_code\Core\Src\stm32f1xx_it.c
+2023-10-03 16:09:55,461 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\NITRO 5\OneDrive\Documents\HK231\vxl_lab1\lab1\source_code\Core\Inc\stm32f1xx_it.h_save
+2023-10-03 16:09:55,540 [INFO] CodeEngine:257 - Generated code: C:\Users\NITRO 5\OneDrive\Documents\HK231\vxl_lab1\lab1\source_code\Core\Inc\stm32f1xx_it.h
+2023-10-03 16:09:55,571 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\NITRO 5\OneDrive\Documents\HK231\vxl_lab1\lab1\source_code\Core\Src\stm32f1xx_hal_msp.c_save
+2023-10-03 16:09:55,681 [INFO] CodeEngine:257 - Generated code: C:\Users\NITRO 5\OneDrive\Documents\HK231\vxl_lab1\lab1\source_code\Core\Src\stm32f1xx_hal_msp.c
+2023-10-03 16:09:55,681 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\NITRO 5\OneDrive\Documents\HK231\vxl_lab1\lab1\source_code\MXTmpFiles\system.tmp_save
+2023-10-03 16:09:55,759 [INFO] CodeEngine:257 - Generated code: C:\Users\NITRO 5\OneDrive\Documents\HK231\vxl_lab1\lab1\source_code\MXTmpFiles\system.tmp
+2023-10-03 16:09:55,791 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\NITRO 5\OneDrive\Documents\HK231\vxl_lab1\lab1\source_code\Core\Inc\stm32f1xx_hal_conf.h_save
+2023-10-03 16:09:55,916 [INFO] CodeEngine:257 - Generated code: C:\Users\NITRO 5\OneDrive\Documents\HK231\vxl_lab1\lab1\source_code\Core\Inc\stm32f1xx_hal_conf.h
+2023-10-03 16:09:55,947 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\NITRO 5\OneDrive\Documents\HK231\vxl_lab1\lab1\source_code\Core\Inc\main.h_save
+2023-10-03 16:09:56,078 [INFO] CodeEngine:257 - Generated code: C:\Users\NITRO 5\OneDrive\Documents\HK231\vxl_lab1\lab1\source_code\Core\Inc\main.h
+2023-10-03 16:09:56,089 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\NITRO 5\OneDrive\Documents\HK231\vxl_lab1\lab1\source_code\Core\Src\main.c_save
+2023-10-03 16:09:56,183 [INFO] CodeEngine:257 - Generated code: C:\Users\NITRO 5\OneDrive\Documents\HK231\vxl_lab1\lab1\source_code\Core\Src\main.c
+2023-10-03 16:09:57,061 [INFO] ProjectBuilder:2578 - Time for Copy HAL[1] : 125mS.
+2023-10-03 16:09:57,061 [INFO] ProjectBuilder:3622 - Project Generator version: 3.14.1
+2023-10-03 16:09:57,547 [INFO] ConfigFileManager:1271 - The Die is : DIE412
+2023-10-03 16:09:59,398 [INFO] ProjectBuilder:3789 - Time for Generating toolchain IDE Files: 2337mS.
+2023-10-03 16:09:59,398 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 0mS.
+2023-10-03 16:09:59,413 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 0mS.
+2023-10-03 16:31:06,108 [INFO] Gpio:254 - dependency for GPIO []
+2023-10-03 16:31:08,084 [INFO] Gpio:254 - dependency for GPIO []
+2023-10-03 16:31:13,482 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 829256200 Bytes (1073741824)
+2023-10-03 16:31:15,385 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 851049752 Bytes (1073741824)
+2023-10-03 16:31:16,548 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 886927880 Bytes (1073741824)
+2023-10-03 16:31:16,847 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2023-10-03 16:31:16,847 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2023-10-03 16:31:16,847 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2023-10-03 16:31:16,847 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2023-10-03 16:31:16,847 [INFO] CodeGenerator:663 - code generatio: config db path: C:\Users\NITRO 5\OneDrive\Documents\HK231\STM32CubeIDE_1.7.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.3.0.202107141111\\db\
+2023-10-03 16:31:17,083 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\NITRO 5\OneDrive\Documents\HK231\vxl_lab1\lab1\source_code\MXTmpFiles\license.tmp_save
+2023-10-03 16:31:17,193 [INFO] CodeEngine:257 - Generated code: C:\Users\NITRO 5\OneDrive\Documents\HK231\vxl_lab1\lab1\source_code\MXTmpFiles\license.tmp
+2023-10-03 16:31:17,209 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\NITRO 5\OneDrive\Documents\HK231\vxl_lab1\lab1\source_code\MXTmpFiles\gpio.tmp_save
+2023-10-03 16:31:17,256 [INFO] CodeEngine:257 - Generated code: C:\Users\NITRO 5\OneDrive\Documents\HK231\vxl_lab1\lab1\source_code\MXTmpFiles\gpio.tmp
+2023-10-03 16:31:17,302 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\NITRO 5\OneDrive\Documents\HK231\vxl_lab1\lab1\source_code\Core\Src\stm32f1xx_it.c_save
+2023-10-03 16:31:17,381 [INFO] CodeEngine:257 - Generated code: C:\Users\NITRO 5\OneDrive\Documents\HK231\vxl_lab1\lab1\source_code\Core\Src\stm32f1xx_it.c
+2023-10-03 16:31:17,381 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\NITRO 5\OneDrive\Documents\HK231\vxl_lab1\lab1\source_code\Core\Inc\stm32f1xx_it.h_save
+2023-10-03 16:31:17,460 [INFO] CodeEngine:257 - Generated code: C:\Users\NITRO 5\OneDrive\Documents\HK231\vxl_lab1\lab1\source_code\Core\Inc\stm32f1xx_it.h
+2023-10-03 16:31:17,475 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\NITRO 5\OneDrive\Documents\HK231\vxl_lab1\lab1\source_code\Core\Src\stm32f1xx_hal_msp.c_save
+2023-10-03 16:31:17,570 [INFO] CodeEngine:257 - Generated code: C:\Users\NITRO 5\OneDrive\Documents\HK231\vxl_lab1\lab1\source_code\Core\Src\stm32f1xx_hal_msp.c
+2023-10-03 16:31:17,570 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\NITRO 5\OneDrive\Documents\HK231\vxl_lab1\lab1\source_code\MXTmpFiles\system.tmp_save
+2023-10-03 16:31:17,617 [INFO] CodeEngine:257 - Generated code: C:\Users\NITRO 5\OneDrive\Documents\HK231\vxl_lab1\lab1\source_code\MXTmpFiles\system.tmp
+2023-10-03 16:31:17,633 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\NITRO 5\OneDrive\Documents\HK231\vxl_lab1\lab1\source_code\Core\Inc\stm32f1xx_hal_conf.h_save
+2023-10-03 16:31:17,711 [INFO] CodeEngine:257 - Generated code: C:\Users\NITRO 5\OneDrive\Documents\HK231\vxl_lab1\lab1\source_code\Core\Inc\stm32f1xx_hal_conf.h
+2023-10-03 16:31:17,743 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\NITRO 5\OneDrive\Documents\HK231\vxl_lab1\lab1\source_code\Core\Inc\main.h_save
+2023-10-03 16:31:17,790 [INFO] CodeEngine:257 - Generated code: C:\Users\NITRO 5\OneDrive\Documents\HK231\vxl_lab1\lab1\source_code\Core\Inc\main.h
+2023-10-03 16:31:17,809 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\NITRO 5\OneDrive\Documents\HK231\vxl_lab1\lab1\source_code\Core\Src\main.c_save
+2023-10-03 16:31:17,899 [INFO] CodeEngine:257 - Generated code: C:\Users\NITRO 5\OneDrive\Documents\HK231\vxl_lab1\lab1\source_code\Core\Src\main.c
+2023-10-03 16:31:18,575 [INFO] ProjectBuilder:2578 - Time for Copy HAL[1] : 63mS.
+2023-10-03 16:31:18,590 [INFO] ProjectBuilder:3622 - Project Generator version: 3.14.1
+2023-10-03 16:31:18,920 [INFO] ConfigFileManager:1271 - The Die is : DIE412
+2023-10-03 16:31:20,442 [INFO] ProjectBuilder:3789 - Time for Generating toolchain IDE Files: 1852mS.
+2023-10-03 16:31:20,442 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 0mS.
+2023-10-03 16:31:20,458 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 0mS.

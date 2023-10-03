@@ -16,3 +16,14 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY org.eclipse.cdt.core 1 0 2023-10-03 15:06:48.360
 !MESSAGE Indexed 'stm32_lab1' (19 sources, 78 headers) in 3.12 sec: 3,647 declarations; 13,140 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.012%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-10-03 16:02:22.872
+!MESSAGE Indexed 'lab1' (0 sources, 0 headers) in 0.003 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2023-10-03 16:07:18.197
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 2 2 2023-10-03 16:07:23.554
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2023-10-03 16:07:23.554
+!MESSAGE The project description file (.project) for 'lab1' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
