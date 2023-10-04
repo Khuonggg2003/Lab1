@@ -76,7 +76,7 @@ void clearAllClock(){
 		  HAL_GPIO_WritePin(led10_GPIO_Port, led10_Pin, RESET);
 		  HAL_GPIO_WritePin(led11_GPIO_Port, led11_Pin, RESET);
 		  HAL_GPIO_WritePin(led12_GPIO_Port, led12_Pin, RESET);
-	}
+	})
 }
 int main(void)
 {
