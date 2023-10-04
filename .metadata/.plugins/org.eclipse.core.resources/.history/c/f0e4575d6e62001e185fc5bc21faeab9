@@ -231,7 +231,7 @@ void setNumberOnClock(int num){
 				HAL_GPIO_WritePin(led12_GPIO_Port, led12_Pin, SET);
 			}
 }
-void clearAllClock(){
+void clearAllCLock(){
 	HAL_GPIO_WritePin(led1_GPIO_Port, led1_Pin, RESET);
 	HAL_GPIO_WritePin(led2_GPIO_Port, led2_Pin, RESET);
 	HAL_GPIO_WritePin(led3_GPIO_Port, led3_Pin, RESET);
